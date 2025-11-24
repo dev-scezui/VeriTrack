@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
-import { StorageService, Session } from '../services/StorageService';
+import { StorageService, Session } from '../../services/StorageService';
 import { format } from 'date-fns';
 import { useRouter } from 'expo-router';
 
@@ -22,7 +22,7 @@ export default function HistoryScreen() {
     const renderItem = ({ item }: { item: Session }) => (
         <TouchableOpacity
             style={styles.item}
-            onPress={() => router.push({ pathname: "/report/[id]", params: { id: item.id } })}
+            onPress={() => router.push({ pathname: "/history/[id]", params: { id: item.id } })}
         >
             <Text style={styles.time}>
                 {format(new Date(item.startTime), 'MMM d, HH:mm')}

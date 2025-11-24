@@ -15,6 +15,7 @@ export default function Layout() {
                 name="history"
                 options={{
                     title: 'History',
+                    headerShown: false,
                     tabBarIcon: ({ color }) => <Ionicons name="time" size={24} color={color} />,
                 }}
             />
