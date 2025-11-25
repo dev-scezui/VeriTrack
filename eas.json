@@ -19,6 +19,9 @@
       "extends": "production",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "GMAPS_KEY": "$(GMAPS_KEY)"
       }
     }
   },

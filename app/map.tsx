@@ -62,6 +62,7 @@ export default function MapScreen() {
                 <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 10 }}>Map Unavailable</Text>
                 <Text style={{ textAlign: 'center', color: '#666' }}>
                     Google Maps API Key is missing or invalid. Please configure it in app.config.ts or via EAS secrets to view the map.
+                    API Key: {apiKey}
                 </Text>
             </View>
         );
